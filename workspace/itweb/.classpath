@@ -8,5 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.8.0_112/lib/ext/servlet-api.jar"/>
+	<classpathentry kind="lib" path="F:/Struts2/用户信息管理/struts-2.5.5-min-lib/mysql-connector-java-5.1.40.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -29,6 +29,7 @@ input{
 	width:200px;
 	height: 200px;
 	margin:35px auto;
+	margin-bottom: 0;
 	background: url("../images/user.jpg") no-repeat;
 	background-size: 200px 200px;
 }
