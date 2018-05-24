@@ -1,5 +1,7 @@
+<%@page import="db.DButil"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@page import="java.sql.*" %>
 <jsp:useBean id="data" class="doman.User" scope="session" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -60,34 +62,40 @@
         </div>
         <div class="con_right">
             <div class="ta">
+           		<form action="">
+                    <input type="text" name="text"/>
+                    <input type="submit" value="搜索">
+                </form>
                 <ul>
                     <li>用户名</li>
                     <li>密码</li>
                     <li>email</li>
                     <li>操作</li>
                 </ul>
-                <ul>
-                    <li>root</li>
-                    <li>123</li>
-                    <li>123@qq.com</li>
-                    <li>
-                        <em class="em">
-                            <span>修改</span>
-                            <span>删除</span>
-                        </em>
-                    </li>
-                </ul>
-                <ul>
-                    <li>root</li>
-                    <li>123</li>
-                    <li>123@qq.com</li>
-                    <li>
-                        <em class="em">
-                            <span>修改</span>
-                            <span>删除</span>
-                        </em>
-                    </li>
-                </ul>
+                <%
+                	Connection conn = DButil.getConnection();
+                	Statement sql = conn.createStatement();
+                	ResultSet rs = sql.executeQuery("select * from userroot");
+                	while(rs.next()){
+                		out.print("<ul>");
+                		out.print(" <li>"+rs.getString(1)+"</li>");
+                		out.print(" <li>"+rs.getString(2)+"</li>");
+                		out.print(" <li>"+rs.getString(3)+"</li>");
+                		out.print("<li>");
+                		out.print("<em class='em'>");
+                		out.print("<span>修改</span>");
+                		out.print("<span>刪除</span>");
+                		out.print("</em>");
+                		out.print("</li>");
+                		out.print("</ul>");
+                	}
+                	conn.close();
+                %>
+            	<div class="ye">
+                    <span>上一页</span>
+                    <span>第1页</span>
+                    <span>下一页</span>
+                </div>
             </div>
         </div>
     </div>
