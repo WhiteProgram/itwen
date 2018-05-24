@@ -1,22 +1,4 @@
-*{
-	margin:0;
-	padding:0;
-	background:#e9ecf3;
-}
-ul,li{
-	list-style-type: none;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-}
-input{
-    border:none;
-	outline: none;
-	background: #fff;
-}
+
 .j_login{
 	width:500px;
 	height:478px;
@@ -65,10 +47,11 @@ input{
 	background: #fff;
 	line-height: 46px;
 }
-#b{
+.j_login_con li input#b{
 	height: 36px;
 	margin:5px 0;
 	line-height: 36px;
 	background: #32c5d2;
+	cursor: pointer;
 }
 

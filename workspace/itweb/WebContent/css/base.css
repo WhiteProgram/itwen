@@ -1,0 +1,29 @@
+*,
+::before,
+::after{
+	margin:0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background:#e9ecf3;
+	color:#697882;
+}
+
+ul,li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    border:none;
+	outline: none;
+	background: #fff;
+}
+input.change::-webkit-input-placeholder {
+	color: red;
+}

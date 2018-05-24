@@ -17,4 +17,22 @@
   	<servlet-name>IndexRoot</servlet-name>
   	<url-pattern>/indexRoot</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>register</servlet-name>
+  	<servlet-class>action.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>register</servlet-name>
+  	<url-pattern>/reRoot</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>re</servlet-name>
+  	<servlet-class>action.Reg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>re</servlet-name>
+  	<url-pattern>/regRoot</url-pattern>
+  </servlet-mapping>
 </web-app>
