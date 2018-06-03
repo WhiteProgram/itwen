@@ -1,0 +1,57 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{ margin:0; background-image:url(img/bj.jpg); background-size:cover;}
+img{ display:block; border:none;}
+input{ margin:0; padding:0; border:none; outline:none; border:#CCC 1px solid;}
+a{ text-decoration:none; color:white}
+input[type='radio'].radio {opacity:0; display:inline-block; height:20px; }
+label.radio {background:url(img/uncheck_radio.png) no-repeat; height:20px; padding-left:25px;}
+input[type='radio'].radio:checked + .radio {background:url(img/check_radio.png) no-repeat;}
+
+.titlebox{ margin-top:120px; overflow:hidden;}
+.titlethree{ margin-top:72px; overflow:hidden;}
+.title{ width:680px; margin:auto;}
+.titlebut{ width:400px; margin:auto; line-height:42px; color:#036; font-size:28px; font-weight:bold; overflow:hidden;}
+.titlebut *{ float:left;}
+.titlemax{ width:400px; margin:auto; line-height:42px; color:#036; font-size:28px; font-weight:bold; overflow:hidden;}
+.titlemax *{ float:left;}
+
+.Waist{height:170px; background-color:#0089d4; margin-top:20px;}
+.Signmax{ width:680px; margin:auto;}
+.Signbut{ width:400px; height:218px; margin:auto; background-color:#FFF; border:#0089d4 3px solid;}
+.Signbox{ width:400px; height:340px; margin:auto; background-color:#FFF; border:#0089d4 3px solid; margin-top:20px;}
+.Signthree{ width:400px; height:432px; margin:auto; background-color:#FFF; border:#0089d4 3px solid; margin-top:20px;}
+.Signfour{ width:940px; margin:auto; background-color:#FFF; border:#0089d4 3px solid; margin-top:20px;}
+
+.column{ line-height:28px; padding-left:32px; margin-bottom:13px;}
+.checkRadio{ line-height:28px; padding-left:32px; margin-bottom:13px;}
+.Promptbut{ width:88px; float:left; text-align:right;}
+.column input{ height:28px; width:230px;}
+.name{ line-height:66px; font-size:21px; color:#06C; font-weight:bold; padding-left:20px;}
+.Verification{ line-height:28px; padding-left:32px; margin-bottom:13px;}
+.Verification input{ height:28px; width:110px;}
+.submit_btn{ width:72px; line-height:28px; font-size:14px; background-image:url(img/anniubj.png); color:#FFF;}
+.Registered{ width:72px; line-height:28px; font-size:14px; background-image:url(img/anniubj.png); color:#FFF; text-align:center; float:left; margin-left:38px;}
+.Signin{ float:left;}
+.button{ padding-left:56px; margin-top:26px;}
+
+/*员工列表页面*/
+.List{ width:940px; margin:auto;}
+table{border-collapse: collapse; border-bottom:1px solid #21bf8a; text-align:center;}
+table thead{ background-color:#FFF; color:#333;border:1px solid #999; line-height:37px;}
+table tr{ line-height:37px;}
+.Background{ background-color:#f1f7fe;}
+table a{ padding-left:10px; padding-right:10px; background-color:#21bf8a; color:#FFF; line-height:24px; float:left; margin-right:8px;}
+.Operation{ margin:auto; overflow:hidden; width:120px;}
+.Employee{ width:108px; line-height:28px; font-size:14px; background-image:url(img/anniubj.png); color:#FFF; text-align:center; margin-top:25px; margin-left:20px; margin-bottom:15px; border:#FFF 2px solid;}
+.box{ width:880px; margin:auto;}
+
+/*新增的css样式*/
+.exit{ width:60px; font-size:14px; position:absolute; top:20px; right:80px;}
+.exit *{ float:left; color:#666}
+.page{ font-size:14px; float:right;}
+.page a{ color:#000;}
+.page input{ width:18px;}
+.pagemax{ width:820px; margin:auto; margin-top:8px;}
+

@@ -43,7 +43,7 @@ public class IndexRoot extends HttpServlet{
 				user.setMess(true);
 				user.setUsername(username);
 				user.setPassword(password);
-				RequestDispatcher dispatcher = request.getRequestDispatcher("/view/Success.jsp");
+				RequestDispatcher dispatcher = request.getRequestDispatcher("success");
 				dispatcher.forward(request, response);
 			}else {
 				user.setMess(false);

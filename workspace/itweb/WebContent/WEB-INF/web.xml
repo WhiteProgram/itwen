@@ -35,4 +35,23 @@
   	<servlet-name>re</servlet-name>
   	<url-pattern>/regRoot</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Success</servlet-name>
+  	<servlet-class>action.Success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Success</servlet-name>
+  	<url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>D</servlet-name>
+  	<servlet-class>model.Del</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>D</servlet-name>
+  	<url-pattern>/d</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

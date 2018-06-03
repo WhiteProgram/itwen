@@ -6,12 +6,14 @@ import java.sql.SQLException;
 
 
 public class DButil {
-	public static Connection getConnection() throws SQLException, ClassNotFoundException {
+	public static Connection getConnection() throws ClassNotFoundException, SQLException{
 		String url = "jdbc:mysql://localhost/itwen?characterEncoding=utf-8";
 		String user = "root";
 		String pd = "";
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection conn = DriverManager.getConnection(url, user, pd);
+		Connection conn = null;
+
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(url, user, pd);
 		return conn;
 	}
 	

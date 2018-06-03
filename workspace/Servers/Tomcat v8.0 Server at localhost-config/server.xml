@@ -127,7 +127,7 @@
         
         
 
-      <Context docBase="itweb" path="/itweb" reloadable="true" source="org.eclipse.jst.jee.server:itweb"/></Host>
+      <Context docBase="tt" path="/tt" reloadable="true" source="org.eclipse.jst.jee.server:tt"/><Context docBase="itweb" path="/itweb" reloadable="true" source="org.eclipse.jst.jee.server:itweb"/></Host>
     </Engine>
   </Service>
 </Server>

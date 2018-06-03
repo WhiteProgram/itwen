@@ -7,6 +7,20 @@ public class User {
 	private String repassword;
 	private boolean mess = true;
 	private String message="请输入用户名";
+	private String pr = "";
+	private String table ="";
+	public String getTable() {
+		return table;
+	}
+	public void setTable(String table) {
+		this.table = table;
+	}
+	public String getPr() {
+		return pr;
+	}
+	public void setPr(String pr) {
+		this.pr = pr;
+	}
 	public String getMessage() {
 		return message;
 	}

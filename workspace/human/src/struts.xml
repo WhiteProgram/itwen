@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts 
+PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- Struts配置文件 -->
+<struts>
+<package name="default" namespace="/" extends="struts-default">
+
+<!-- 1.查看员工信息 -->
+	<action name="find" class="action.EmpAction" method="findEmps">
+	<result name="success">/view/list.jsp</result>
+	</action>
+
+<!-- 2.打开添加员工页面 -->
+	<action name="add" class="action.EmpAction" method="addEmp">
+	<result name="success">/view/addemp.jsp</result>
+	</action>
+
+<!-- 3.插入员工信息 -->	
+	<action name="insert" class="action.EmpAction" method="insertEmp">
+		<result name="success" type="redirectAction">find</result>
+	</action>
+	
+<!-- 4.删除员工信息 -->
+	<action name="del" class="action.EmpAction" method="delEmp">
+		<result name="success" type="redirectAction">find</result>
+	</action>
+	
+<!-- 5.更新员工信息 -->
+	<action name="update" class="action.EmpAction" method="updateEmp">
+		<result name="success">/view/updateemp.jsp</result>
+	</action>
+	
+<!-- 6.修改员工信息 -->
+	<action name="modify" class="action.EmpAction" method="modifyEmp">
+		<result name="success" type="redirectAction">find</result>
+	</action>
+	
+<!-- 7.打开登录页面-->
+	<action name="login" class="action.UserAction" method="loginUser">
+		<result name="success">/view/login.jsp</result>
+	</action>
+
+<!-- 8.登录用户认证 -->
+	<action name="logined" class="action.UserAction" method="logined">
+		<result name="success" type="redirectAction">find</result>
+		<result name="fail" type="redirectAction">login</result>
+	</action>
+	
+</package>
+
+</struts>
+<!-- 元素、子元素。元素值，参数，参数值 -->
